@@ -1,0 +1,362 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Enfold Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="assets/blueprint-css/image.css" type="text/css">
+	<link rel="stylesheet" href="assets/js/prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />	
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+	<script type='text/javascript' src='assets/js/jquery.js'></script>
+	<script src="assets/js/prettyPhoto/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>	
+	<script type='text/javascript' src='assets/js/custom.js'></script>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;<span class="center">Enfold WordPress Theme</span>&rdquo; Documentation by &ldquo;Kriesi&rdquo; v1.0</h3>
+		
+		<hr/>
+<h1 class="center">&ldquo;Enfold WordPress Theme&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 2013/04/12<br>
+					By: Christian "Kriesi" Budschedl<br>
+					Email: <a href="http://goo.gl/HqQ4dR">Kriesi</a>
+					</strong>				</p>
+				<p class="prepend-top"><span class="small">Informations about Updates and New Themes are always announced on Twitter and Facebook. Twitter updates are usually more up to date, Facebook updates are more detailed and easier to follow :)</span><br/>
+					<br/>
+					<a href="http://twitter.com/randy96down"><img src="assets/images/twitter.png" width="212" height="65"></a><br/>
+					<a href="http://www.facebook.com/pages/Kriesi/333648177216"><img src="assets/images/facebook.jpg" width="212" height="65"></a><br/>
+					<br/>
+				</p>
+</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0"><strong>Hello! First of all I would like to thank you for purchasing my theme! :) </strong><br>
+				If you have any questions that are beyond the scope of this help file, please feel free to ask your question at the  support forum at <a href="http://www.kriesi.at/support/">http://www.kriesi.at/support/</a>. </p>
+				<p class="prepend-top append-0">This file will teach you how to set up and use the “Enfold”  WordPress Theme. <br>
+					This file is really extensive so you might think the theme is hard to use, <br>
+					actually its not, you probably just might jump to the options page and explore everything yourself, this file is more of a reference work if you do not know what to do, or if you are not familiar to WordPress.</p>
+				<!--<p class="prepend-top append-0">In addition to this file I recorded several screencasts that might help you to setup and install the theme. Since English ain't my first	language	I	appologize upfront for my bad grammar and  pronunciation :)</p>-->
+				<p class="prepend-top append-0">Have fun with your new theme! best regards<br>
+				<strong>Kriesi</strong></p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr/>
+<div class='toc'>
+<h2 id="toc" class="alt">Table of Contents</h2>
+<ol class="alpha">
+		<li><a href="#folderStructure">Folder Structure</a></li>
+		<li><a href="#installation">Installation and Setup</a>
+		  <ol>
+		    <li><a href="#options">Setting up the Theme Options</a></li>
+		    <li><a href="#styling">Setting up  Styling</a></li>
+		    <li><a href="#settings">General settings, Header, Sidebar and Footer Options</a></li>
+		    <li><a href="#mega">Setting up the Menus and Mega Menus on your site</a></li>
+		    <li><a href="#pages">Adding simple Posts, Pages and Portfolio Entries</a></li>
+		    <li><a href="#shortcodes">Using shortcodes</a></li>
+		    <li><a href="#template_builder">Advanced Pages:Building your own custom Pages with the template Builder</a></li>
+		    </ol>
+	  </li>
+	<li><a href="#htmlStructure">HTML Structure</a></li>
+	<li><a href="#cssFiles">CSS Files and Structure</a></li>
+	<li><a href="#javascript">JavaScript</a></li>
+	<li><a href="#psdFiles">PSD Files</a></li>
+	<li><a href="#imagesize">Image Sizes</a></li>
+	<li><a href="#credits">Sources and Credits</a></li>
+</ol>
+</div>
+<hr/>
+<div class='real_content'>
+<h3 id="folderStructure"><strong>Folder Structure of Enfold and the Avia Framework</strong> - <a href="#toc">top</a></h3>
+        <p>The Theme is built with WordPress best practices in mind, therefore it makes heavy use of the WordPress template engine. What exactly does that mean?</p>
+        <p>Whenever you see a php function call like this within your php files (get_template_part(), get_header(), get_footer() or get_sidebar() ) the theme retrieves a reusable code snippet, most of the time a chunk of code that is used in many different files.</p>
+        <ul>
+        	<li>This approach has the benefit that you can edit a single code snippet and the changes will effect many page templates</li>
+            <li>Its still easy to only change a single page template since you can simply include a modified copy of the snippet instead of the original one</li>
+            <li>Last but not least it makes the folder structure clear and tidy</li>
+        </ul>
+      <p>Apart from the php structure the theme uses a lot of modern CSS3 features, most notably the power of media queries to serve different layouts for different viewport sizes. If you use a modern browser (IE9 +, Chrome, Safari, Firefox) and resize your browser window you will realize that the theme adapts its size to the viewport.</p>
+    <h4>Folder structure:</h4>
+		<ul>
+		<li>Enfold →  all PHP template files needed to run the WordPress theme as well as the main stylesheet (style.css)</li>
+		<li>JS → Custom Javascript files, the prettyPhoto Lightbox clone and the jQuery library</li>
+		<li>CSS →  Multiple stylesheets:
+		  <ul>
+		    <li>'css/grid.css - loads the default grid with all widths for the different screens</li>
+		    <li> css/base.css- loads the css reset &amp; default styling for html elements like &lt;a&gt;, &lt;ul&gt;, &lt;li&gt;, and some wordpress generated classes (eg galleries)<br>
+	        </li>
+		    <li>css/layout.css - theme layout for the default screen size and media queries for smaller screen estates</li>
+		    <li>css/slideshow.css- theme layout for the various slideshows</li>
+		    <li>css/shortcodes.css - loads the css rules for the theme shortcodes</li>
+		    <li>css/dynamic-css.php - a php file that holds all color informations entered within the backend. it is recommended to not edit this file and instead use the custom.css file</li>
+		    <li>css/custom.css - stylesheet dedicated for user customizations</li></ul>
+		</li>
+		<li>Images
+		  <ul>
+		    <li>Layout Images, Icons folder etc </li>
+	      </ul>
+		  </li>
+		<li>Framework → The theme is built on top of my very own "Avia Framework". All framework files are located in this folder. Modification of the framework is not recommended</li>
+		<li>Includes → Lots of small code snippets and functions that were mentioned before that make the theme flexible and easy to edit
+		  <ul>
+		    <li>admin →mostly configuration files for the admin panel. also holds some registration functions for custom post types and dynamic styles	        </li>
+	      </ul>
+		</li>
+		<li>config-wpml: contains files that ensure the compatibility with the WPML Multilanguage Plugin</li>
+		<li>config-layerslider: contains the layerslider slideshow plugin and some compatibility functions
+		</li>
+		<li>config-templatebuilder: contains our very own new template builder</li>
+		<li>config-bbpress: contains the configuration file to integrate the bbpress forum into the theme. you need to install the <a href="http://wordpress.org/extend/plugins/bbpress/">bbpress forum software</a> manually</li>
+      </ul>
+
+	 <!-- <p><strong>These  Videos Contain: </strong></p>
+		<ol>
+		  <li>
+		    Installation and using the auto importer
+		  </li>
+		  <li>Setting up the home and blog page and assigning a default layout </li>
+		  <li>Setting up a page, changing the layout and adding a slideshow with images and video</li>
+		  <li>Using shortcodes with the visual shortcode editor to enhance your post layout</li>
+		  <li>
+	      Building improved layouts with the template builder<br>
+	      </li>
+		  <li>Setting up the menu with the help of your menu manager</li>
+		  <li>
+	      Setting up the <a href="http://wordpress.org/extend/plugins/woocommerce/">woocommerce plugin</a> for shop functionallity<br>
+	      </li>
+      </ol>
+<p>&nbsp;</p>-->
+<hr/>
+<h3 id="installation"><strong>Installation</strong> - <a href="#toc">top</a></h3>
+		<p><br>
+	    You can either choose to upload the theme to your server via ftp (only upload the <strong>unzipped folder</strong> „Enfold“ into the folder wp-content/themes/ ) or via WordPress upload function. to use the upload function of  the WordPress admin panel make sure to ONLY upload  the “<strong>Enfold</strong>” folder and not the whole archive file that you received by themeforest. <a href="http://www.kriesi.at/themes/Enfold/template-files/video-tutorials/#auto-install">Here is a short demo video on how its done</a></p>
+		<p><strong>Notice</strong>: if you are new to WordPress and have problems installing it you might want to check out this link: <a href="http://support.envato.com/index.php?/Knowledgebase/Article/View/269/0/my-wordpress-theme-isnt-working-what-should-i-do">Solving broken theme issues</a><br>
+			After that is done activate the theme as you would activate any other theme at Appearance-&gt;Themes.<br>
+</p>
+		
+		
+		<p>If you are new to WordPress and have problems with setting up the theme you might want to import the dummy content file that comes with the theme. You can import this file by clicking the "Import dummy data" Button of the Enfold Theme options. The theme will then import some dummy posts and pages from the live preview. However you will still need to set some options on your own, like which page should serve as front page or how menus should be displayed. A quick demonstration video can be found <a href="http://www.youtube.com/watch?v=tzb4BZwSH34">here</a>. (its really more a demonstration than a tutorial but it might be helpfull nevertheless. the video was recorded using the Brigtbox Theme but the options are the same for Enfold since the themes share a framework)</p>
+<p><strong>Forum functionallity<br>
+</strong>To enable the forum functionaliy download the forum <a href="http://wordpress.org/extend/plugins/bbpress/">here</a>, then install and actiavte it like any other plugin. </p>
+<hr/>
+<h5 id="options"><strong>Setting up the Theme Options  - <a href="#toc">top</a></strong></h5>
+
+
+
+<p>If you want to change the general Options of the Theme open the “Enfold” Theme Options Panel (located in your admin sidebar) and click it, you will notice several tabs with options, which we will discuss now one by one.</p>
+<p><strong><img src="assets/images/screenshot 2011-03-06 um 18.46.31.png" width="612" height="91" class="bordergrey_leftttbottom">Front page &amp; Blog page</strong><br>
+  First of all you have to choose which content your front page should contain. You can either choose to display a page of your choice, or if you dont select a page the blog will be displayed. If you choose to select a page you can then pick another page that will display your blog instead of the default page content. If you want to make the front page look like the one in the theme demo make sure you select a page and then create a unqiue dynamic page template.</p>
+<p><strong><img src="assets/images/screenshot 2011-03-06 um 18.46.39.png" width="613" height="132" class="bordergrey_leftttbottom">Logo</strong><br>
+  Next you can choose to upload your own logo. Make sure that the logo has the correct dimensions. If you need to embed a logo of different size you might need to edit the CSS files directly. We will talk about CSS best practices for the theme in a second after we talked about the last input field on the Theme Options page:</p>
+<p><strong><img src="assets/images/screenshot 2011-03-06 um 18.46.49.png" width="617" height="170" class="bordergrey_leftttbottom">Google Analytics Tracking Code</strong><br>
+  Enter your Google analytics tracking Code here. It will automatically be  added to the themes footer so google can track your visitors behaviour.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr/>
+<h5 id="styling"><strong>Setting up  Styling  - <a href="#toc">top</a></strong></h5>
+<p><strong><img src="assets/images/style-tab.jpg" alt="" width="623" height="846" class="bordergrey_leftttbottom">Theme Colors:</strong><br>
+  With only a few different color inputs you can easily create new layouts in seconds.</p>
+<p>The theme colors are separated in different sections.</p>
+<p>You can apply link colors, font colors, backgrounds etc to each section. As soon as you change the value of some of the input fields the small preview window will update and show you how your new style looks like.</p>
+<p>The theme comes with 14 predefined color schemes that can be used out of the box or modified if needed</p>
+<p>&nbsp;</p>
+<p><strong>Fonts</strong><br>
+  You can choose several fonts that will add a unique feeling to your site. The fonts you can choose are a selection of some of the google free web font archive and applied via css fontface.</p>
+<p><strong>Quick CSS</strong><br> 
+  If you want to do minor changes to the css you can enter them here and they will be added to the css. If you want to do major changes we recommend you to use the custom.css file.</p>
+<p><br>
+</p>
+<hr/>
+
+<h5 id="settings"><strong>General settings, Header, Sidebar and Footer Options <a href="#toc">top</a></strong></h5>
+<p>Setting up the other options is pretty self explanatory. If you are not sure what they do simply read the help text that is listed beside each option. </p>
+<p>Here is a quick overview:<br>
+  <strong>Under General Settings you will find the following options:</strong></p>
+<ul>
+  <li>Disable the themes responsiveness</li>
+  <li>Activate websafe fonts for windows users with old browsers</li>
+  <li>Choose a default Blog layout here. This layout will be applied to your main blog, your single entries and also your blog archives.</li>
+  <li>Portfolio Slug: Single Portfolio items will use this url slug</li>
+  </ul>
+<p><strong> Header options:</strong></p>
+<ul>
+  <li>Select one header of your choice. If you choose a header that supports social Icons You will be able to add any number of icons to the icon manager that appears once you have selected the header. If you choose a header that supports a second sub menu you can add this sub menu at Appearance-&gt;Menus later on.</li>
+  </ul>
+<p><strong>Sidebar options:</strong></p>
+<ul>
+  <li>Select the default location of the Blog Sidebar. Can be overwriten for each Post individually on the edit Post screen</li>
+  <li>Select the default location of the Page Sidebar. Can be overwriten for each Page individually on the edit Page screen</li>
+  <li>Display Submenu for nested pages. If you create a lot of pages and add subpages to those pages you can choose to display a sidebar menu with all those pages by default. If you need finer control of this feature simply deactivate it, then create new sidebars with the sidebar builder at Appearance-&gt;Widgets and when editing a Page choose the appropriate Sidebar.</li>
+</ul>
+<p><strong>Footer  options:</strong></p>
+<ul>
+  <li>Select how many footer columns you want to display</li>
+</ul>
+<p>&nbsp;</p>
+<hr/>
+<h5 id="mega"><strong> Setting up the Menus on your site  - <a href="#toc">top</a></strong></h5>
+<p>The Theme  improves the WordPress 3.0 menu items with a few additional options that make it possible to create subheadings for the main menu items. To do this just enter some text into the menus description field. If you have problems pulling that off: here is a short <a href="http://www.screenr.com/VMZs">demonstration on how its done</a> (The video shows the Abundance theme, but it works the same way in Enfold)</p>
+<p>The theme offers 2 menu locations: the Main menu location beside your logo and a very small submenu location at the top of your page, right above your logo. Once you have created a menu you then have to select where to display it. Please keep in mind that the small menu location above your logo doesnt support dropdown menus or mega menus.</p>
+<p>You can also create additional menus and display them within your sidebar by adding the menu widget to one of your sidebars</p>
+
+
+
+
+<hr/>
+
+
+<h5 id="b9"><strong>Adding simple Posts, Pages and Portfolio Entries</strong>  - <a href="#toc">top</a></h5>
+
+
+<p><img src="assets/images/layout.jpg" width="290" height="354" class="bordergrey_leftttbottom">Writing a post or page  doesn't  differ from doing so when using other themes. You add a title, add some content, and categories and thats about it. When writing or editing a post you will notice that the left side got an additional &quot;layout&quot; sidebar.</p>
+<p>Here you can overwrite the default settings of your options panel. You can choose a custom sidebar position (left/right/no sidebar) and if you choose to display a sidebar you can also set to display a custom sidebar. If you want to create a new custom sidebar for an entry simply head over to appearance-&gt;menus. At the bottom of the page you will find a custom input field to add new sidebar areas.</p>
+<p>Last but not lease you can choose if you want to display a subheader with page title and breadcrumb navigation when on a page.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Using Post Formats</strong></p>
+<p><strong>Post Formats</strong> is a <a href="http://codex.wordpress.org/Theme_Features" title="Theme Features">theme feature</a> introduced with <a href="http://codex.wordpress.org/Version_3.1" title="Version 3.1">Version 3.1</a>. A Post Format is a piece of meta information that can be used by a theme to customize its presentation of a post. The theme supports 4 different formats. The standard format is for deault blog entries. The link format is for linked entries to external sites. If you select the link format make sure that your post has a title and that the first line in the content textarea is a link.</p>
+<p>If you select &quot;Quote&quot; the post title will be transformed to a bold quote. The gallery post type doesn't really differ from the standard post type but if you add a gallery anywere to the entry it will be displayed at the top of the entry. If you choose Video and add the video url anywhere to the post it will also be extracted and be displayed at the top of the page.</p>
+<p><img src="assets/images/screenshot 2011-12-18 at 17.11.25.jpg" alt="" width="296" height="139"></p>
+<hr/>
+
+
+
+
+
+
+<span id="b10"><strong>Using shortcodes - <a href="#toc">top</a></strong></span>
+
+<p>What is a shortcode and how do i use it? <br>
+Shortcodes are small text snippets that get converted by WordPress. As an example:</p>
+<p>Using shortcodes is very easy. To use one, create a new post (or edit an existing one), and in the the editor type a shortcode in brackets, such as:</p>
+<pre>
+[button]This is a button.[/button] 
+</pre>
+<p>to generate a button. Other example would be the use of shortcodes to create columns within your post:
+<pre>[av_one_half first]Content here.[/av_one_half] [av_one_half]Content here.[/av_one_half] </pre>
+<pre>[av_one_third first]Content here.[/av_one_third] [av_one_third]Content here.[/av_one_third] [av_one_third]Content here.[/av_one_third] </pre>
+<pre>[av_one_fourth first]Content[/av_one_fourth] [av_one_fourth]Content[/av_one_fourth] [av_one_fourth]Content[/av_one_fourth] [av_one_fourth]Content[/av_one_fourth] </pre>
+<pre>[av_one_fourth first]Content here.[/av_one_fourth] [av_three_fourth]Content here.[/av_three_fourth]</pre>
+<pre>[av_one_third first]Content here.[/av_one_third] [av_two_third]Content here.[/av_two_third]</pre>
+
+
+<br/>
+<img src="assets/images/screenshot 2011-03-06 um 21.21.35.png" width="300" height="272" class="bordergrey_leftttbottom">The theme comes with quite a few shortcodes that are easily accessible thanks to a visual self-explanatory user interface that is accessible by clicking the magic wand button when you write a post
+</p>
+
+<p>Most shortcodes require you to enter additional information and then get generated by the theme on its own, starting from columns to content slider. You can also choose to nest various shortcodes. For example create 3 columns, and within each of them display a small slideshow. Or do it the other way round: create a single slideshow that slides multiple columns. The sky is the limit :)</p>
+<p><strong>Attention:</strong> Please make sure to always start new shortcodes on new lines. Most of the time you wont encounter any errors if you don't do that but unfortunately WordPress does mess up the html sometimes. This is true for all shortcodes but the inline ones like drop-caps buttons and icon links, those are the only ones that don't need a new paragraph. </p>
+<p>
+In case you encounter odd behavior always make sure that all shortcodes are closed as expected. Also when trying to nest shortcodes please be aware that you cant wrap a shortcode with the same name around another one with that name:
+
+For example: [av_one_third first] [av_one_third first]Content here.[/av_one_third] [/av_one_third] would result in messed up html code since WordPress is not able to identify which opening tag belongs to which close tag. However what you can do is nest shortcodes within each other if they don't share a name. for example you could easily place a slideshow within a 3rd column tag. Just make sure to add new paragraphs between them ;)
+</p>
+<hr/>
+
+<span id="template_builder"><strong>Advanced Pages: Building your own custom Pages with the template Builder <a href="#toc">top</a></strong></span>
+
+<p>Probably the best way to create stunning and complex pages is the Wordpress Template Builder that comes with the theme. Allthough you can of course choose to edit template files the old fashioned way, (by editing them in your HTML editor of choice) the dynamic template generator is a much more flexible solution. So how does that editor work? </p>
+<p>First you need to open a new or existing page or portfolio entry. You will notice that at the top of the default editor you can now find a switch that allows you to change to the advanced layout builder.<img src="assets/images/header.jpg" alt="" width="790" height="202"></p>
+<p>&nbsp;</p>
+<p>Once clicked you can see the canvas of the new Template Builder. Please note that any content that is located in the default editor will be removed once you save a Advanced Layout Template.</p>
+<p><img src="assets/images/untitled.jpg" alt="" width="790" height="442"></p>
+<p>You can now start dragging and dropping elements onto the canvas. If you dont know what an element does place your mouse above to display a short tooltip. </p>
+<p>Here is a short  quickstart Guide:</p>
+<ul>
+  <li>To insert an Element either click the insert button for that element or drag the button onto the canvas</li>
+  <li>If you place your mouse above the insert button a short info tooltip will appear</li>
+  <li>To sort and arrange your elements just drag them to a position of your choice and release them</li>
+  <li>Valid drop targets will be highlighted. Some elements like fullwidth sliders and color section can not be dropped onto other elements</li>
+</ul>
+Edit Elements in Popup Window:
+<ul>
+  <li>Most elements open a popup window if you click them</li>
+  <li>Press TAB to navigate trough the various form fields of a popup window.</li>
+  <li>Press ESC on your keyboard or the Close Button to close popup window.</li>
+  <li>Press ENTER on your keyboard or the Save Button to save current state of a popup window</li>
+  </ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr/>
+
+<h3 id="htmlStructure"><strong>HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>The Theme uses valid HTML 5 and comes with predefined classes for common elements needed in web design.<br/>
+
+All templates share basic elements like header, footer, main, and entry so be carefull when editing those or adding/changing the CSS for those ids and classes :)</p>
+
+<hr/>
+<h3 id="cssFiles"><strong>CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>The CSS for the theme is split into various files: one that holds the basic markup for layout which are base.css and grid.css. The layout.css holds theme specific css rules. The Shortcode css file holds all rules for the template builder file. Last but not least we got an empty custom.css file which should be used by you to add your own modifications. Since we never touch the custom.css file when making updates you can easily update to later theme versions without beeing in danger of loosing stylesheet modifications.
+      </p>
+
+
+		
+<hr/>
+<h3 id="javascript"><strong>JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>The theme uses advanced jQuery functions. You do not need to know how to use jQuery to activate them, almost everything is controlled by WordPress. All the function calls as well as as the custom created jQuery plugins like the slideshows are located in the avia.js file.<br>
+		<p><strong> Lightbox: a custom pretty photo skin</strong></p>
+		<p>the lightbox gets automatically applied to links that contain images, youtube videos, vimeo videos, mov files and swf files. if you don't want to activate the lightbox on any of those links add the class 'noLightbox'. if you manually want to apply the lightbox to a link you can add the rel='lightbox' attribute to the &lt;a&gt; tag.<br>
+		</p>
+		<p>Better documentation can be found here:<br>
+		<a href="http://www.no-margin-for-errors.com/projects/prettyPhoto-jquery-lightbox-clone/">http://www.no-margin-for-errors.com/projects/prettyPhoto-jquery-lightbox-clone/</a></p>
+
+<hr/>
+<h3 id="psdFiles"><strong>PSD Files</strong> - <a href="#toc">top</a>		</h3>
+		<p>Since the design for the theme was mainly done in google Chrome once the initial Mockup was done we could only include the mockup psd file and the logo files. Other than that the theme doesnt use any images.</p>
+<hr/>
+<h3 id="imagesize"><strong>Image Sizes- <a href="#toc">top</a></strong></h3>
+	  <p>This is the image array used in functions.php to tell wordpress which image sizes to use.</p>
+	  <p>$avia_config['imgSize']['widget'] 			 	= array('width'=&gt;36,  'height'=&gt;36);						// small preview pics eg sidebar news<br>
+	    $avia_config['imgSize']['entry_with_sidebar'] 	= array('width'=&gt;710, 'height'=&gt;270);		                 // big images for blog and page entries<br>
+	    $avia_config['imgSize']['entry_without_sidebar']= array('width'=&gt;1030, 'height'=&gt;360 );						// images for fullsize pages and fullsize slider<br>
+	    $avia_config['imgSize']['square'] 		 	    = array('width'=&gt;180, 'height'=&gt;180);		                 // small image for blogs<br>
+	    $avia_config['imgSize']['featured'] 		 	= array('width'=&gt;1500, 'height'=&gt;430 );						// images for fullsize pages and fullsize slider<br>
+	    $avia_config['imgSize']['portfolio'] 		 	= array('width'=&gt;495, 'height'=&gt;400 );						// images for portfolio entries (2,3 column)<br>
+	    $avia_config['imgSize']['portfolio_small'] 		= array('width'=&gt;260, 'height'=&gt;185 );						// images for portfolio 4 columns<br>
+      $avia_config['imgSize']['gallery'] 		 		= array('width'=&gt;710, 'height'=&gt;575 );						// images for portfolio entries (2,3 column)</p>
+    <p>&nbsp;</p>
+<p>you can change these settings in functions.php. the theme will then create different thumbnail sizes according to your changes on upload.Tto reflect those changes you might need to do some minor changes within your CSS file, depending on what you have changed ;)</p>
+<hr/>
+<h3 id="credits"><strong>G) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+<ul>
+<li>  <A HREF="http://www.no-margin-for-errors.com/projects/prettyPhoto-jquery-lightbox-clone/" align="LEFT">lightbox plugin</A></li>
+<li><a href="http://codecanyon.net/item/layerslider-wp-the-wordpress-parallax-slider/1362246?ref=Kriesi">Layerslider WP</a></li>
+<li><a href="http://www.entypo.com/">Entypo Icon Font</a></li>
+<li>flickr creative commons library pictures by: codyR, kretyen, mescon, obskura, freya23, amir K, Tambako the Jaguar, jaeWalk</li>
+<li>dribbble Portfolio Pictures by <a href="dribbble.com/Dash">Dash</a></li>
+</ul>
+<hr/>
+<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Kriesi</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+      </p></div>
+</div><!-- end div .container -->
+</body>
+</html>

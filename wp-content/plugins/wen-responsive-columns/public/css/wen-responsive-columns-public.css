@@ -1,0 +1,185 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.wrc-column-grid{
+  margin: 0;
+  padding: 0;
+  clear:both;
+  height: auto;
+  overflow: hidden;
+  margin: 0 -15px;
+}
+.wrc-column-grid-2,
+.wrc-column-grid-12{
+}
+.wrc-column{
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  box-sizing: border-box;
+}
+
+/* Two column grid */
+.wrc-column-grid-2 .wrc-column-width-1{
+  width: 50%;
+}
+.wrc-column-grid-2 .wrc-column-width-2{
+  width: 100%;
+}
+
+/* Three column grid */
+.wrc-column-grid-3 .wrc-column-width-1{
+  width: 33.33333333%;
+}
+.wrc-column-grid-3 .wrc-column-width-2{
+  width: 66.66666666%;
+}
+.wrc-column-grid-3 .wrc-column-width-3{
+  width: 100%;
+}
+
+/* Four column grid */
+.wrc-column-grid-4 .wrc-column-width-1{
+  width: 25%;
+}
+.wrc-column-grid-4 .wrc-column-width-2{
+  width: 50%;
+}
+.wrc-column-grid-4 .wrc-column-width-3{
+  width: 75%;
+}
+.wrc-column-grid-4 .wrc-column-width-4{
+  width: 100%;
+}
+
+/* Four column grid */
+.wrc-column-grid-5 .wrc-column-width-1{
+  width: 20%;
+}
+.wrc-column-grid-5 .wrc-column-width-2{
+  width: 40%;
+}
+.wrc-column-grid-5 .wrc-column-width-3{
+  width: 60%;
+}
+.wrc-column-grid-5 .wrc-column-width-4{
+  width: 80%;
+}
+.wrc-column-grid-5 .wrc-column-width-5{
+  width: 100%;
+}
+
+/* Twelve column grid */
+.wrc-column-grid-12 .wrc-column-width-1{
+  width: 8.33333333%;
+}
+.wrc-column-grid-12 .wrc-column-width-2{
+  width: 16.66666667%;
+}
+.wrc-column-grid-12 .wrc-column-width-3{
+  width: 25%;
+}
+.wrc-column-grid-12 .wrc-column-width-4{
+  width: 33.33333333%;
+}
+.wrc-column-grid-12 .wrc-column-width-5{
+  width: 41.66666667%;
+}
+.wrc-column-grid-12 .wrc-column-width-6{
+  width: 50%;
+}
+.wrc-column-grid-12 .wrc-column-width-7{
+  width: 58.33333333%;
+}
+.wrc-column-grid-12 .wrc-column-width-8{
+  width: 66.66666667%;
+}
+.wrc-column-grid-12 .wrc-column-width-9{
+  width: 75%;
+}
+.wrc-column-grid-12 .wrc-column-width-10{
+  width: 83.33333333%;
+}
+.wrc-column-grid-12 .wrc-column-width-10{
+  width: 91.66666667%;
+}
+.wrc-column-grid-12 .wrc-column-width-12{
+  width: 100%;
+}
+
+
+
+/*  Media Queries
+--------------------------- */
+
+/* Smaller than standard 991 (devices and browsers) */
+@media only screen and (max-width:991px){
+    .wrc-column-grid-4 .wrc-column-width-1,
+    .wrc-column-grid-4 .wrc-column-width-2,
+    .wrc-column-grid-4 .wrc-column-width-3,
+     .wrc-column-grid-5 .wrc-column-width-1,
+    .wrc-column-grid-5 .wrc-column-width-2,
+    .wrc-column-grid-5 .wrc-column-width-3,
+     .wrc-column-grid-5 .wrc-column-width-4  {
+      width: 50%;
+  }
+
+    .wrc-column-grid-12 .wrc-column-width-1,
+    .wrc-column-grid-12 .wrc-column-width-2,
+    .wrc-column-grid-12 .wrc-column-width-3,
+     .wrc-column-grid-12 .wrc-column-width-4,
+    .wrc-column-grid-12 .wrc-column-width-5,
+    .wrc-column-grid-12 .wrc-column-width-6,
+     .wrc-column-grid-12 .wrc-column-width-7,
+     .wrc-column-grid-12 .wrc-column-width-8,
+    .wrc-column-grid-12 .wrc-column-width-9,
+    .wrc-column-grid-12 .wrc-column-width-10,
+     .wrc-column-grid-12 .wrc-column-width-11{
+      width: 50%;
+  }
+
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width:767px){
+
+     .wrc-column-grid .wrc-column-width-1,
+     .wrc-column-grid .wrc-column-width-2,
+     .wrc-column-grid .wrc-column-width-3,
+      .wrc-column-grid .wrc-column-width-4,
+     .wrc-column-grid .wrc-column-width-5,
+     .wrc-column-grid .wrc-column-width-6,
+      .wrc-column-grid .wrc-column-width-7,
+      .wrc-column-grid .wrc-column-width-8,
+     .wrc-column-grid .wrc-column-width-9,
+     .wrc-column-grid .wrc-column-width-10,
+      .wrc-column-grid .wrc-column-width-11{
+      width:50%;
+  }
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width:479px){
+
+     .wrc-column-grid .wrc-column-width-1,
+     .wrc-column-grid .wrc-column-width-2,
+     .wrc-column-grid .wrc-column-width-3,
+      .wrc-column-grid .wrc-column-width-4,
+     .wrc-column-grid .wrc-column-width-5,
+     .wrc-column-grid .wrc-column-width-6,
+      .wrc-column-grid .wrc-column-width-7,
+      .wrc-column-grid .wrc-column-width-8,
+     .wrc-column-grid .wrc-column-width-9,
+     .wrc-column-grid .wrc-column-width-10,
+      .wrc-column-grid .wrc-column-width-11{
+      width: 100%;
+  }
+
+}
+
+/* Gravity Form fix */
+.gform_wrapper br{
+  display: none;
+}

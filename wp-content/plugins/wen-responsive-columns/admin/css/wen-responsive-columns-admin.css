@@ -1,0 +1,23 @@
+/**
+ * All of the CSS for your dashboard-specific functionality should be
+ * included in this file.
+ */
+
+/* Editor popup form */
+.wrc-form-content{
+  margin: 5px;
+}
+.wrc-form-content .form-row{
+  clear: both;
+  margin-bottom: 10px;
+}
+.wrc-form-content label{
+  font-weight: bold;
+  margin-right: 15px;
+}
+.wrc-form-content .form-row select{
+  padding: 3px;
+}
+.wrc-form-content .column-mix-item{
+  max-width: 50px;
+}

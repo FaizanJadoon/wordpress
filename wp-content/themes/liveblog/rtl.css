@@ -1,0 +1,77 @@
+body {
+	direction:rtl;
+}
+.main-navigation { float:left }
+.header-slider  .flex-control-nav {
+	left:10%;
+	text-align:left
+}
+#navigation .menu li:hover ul,
+#navigation .menu li.sfHover ul { right:0 }
+#navigation ul.menu li li:hover ul,
+#navigation ul.menu li li.sfHover ul { right:180px }
+#navigation ul.menu li { text-align:right }
+.sf-arrows ul .sf-with-ul:after {
+	right:auto;
+	left:5px;
+	border-color:transparent;
+	border-right-color:#fff;
+}
+.btn {
+	float:left;
+	margin:10px 15px 10px 0 !important
+}
+.tagcloud a,
+#commentform #submit,
+.post header time,
+.title-wrap { float:right }
+.reply,
+.post-avtar,
+.s { float:left }
+.s { padding-left:0; padding-right:3% }
+.title-wrap {
+	border-left:0;
+	border-right:1px solid rgba(0, 0, 0, 0.1);
+	padding:20px 2% 28px 0
+}
+.post-meta span {
+	margin:10px 0 0 10px;
+	padding:0 0 0 16px
+}
+.post-meta > span:before {
+	left:0;
+	right:auto
+}
+.post .post-content ul li:before, .content-page .post-content ul li:before {
+	content:"\f137";
+	left:auto;
+	right:-18px
+}
+.widget ul {
+	direction:rtl;
+	margin:0 20px 0 0
+}
+.thumbnail {
+    float:right;
+    margin-left:10px;
+    margin-right:0;
+}
+#respond { overflow:hidden }
+.fa { display:inline }
+.post-meta .post-type i { display:inline-block }
+.content-single li,
+.content-page li {
+	margin-left:0;
+	margin-right:30px
+}
+.pagination span, .pagination a { margin:0 0 0 10px }
+.author-box-avtar {
+    float:right;
+    margin-left:20px;
+    margin-right:0;
+}
+#comments .avatar {
+    float:right;
+    margin-left:2%;
+	margin-right:0
+}

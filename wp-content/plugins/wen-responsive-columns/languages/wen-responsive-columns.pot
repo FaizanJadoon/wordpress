@@ -1,0 +1,95 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WEN Responsive Columns\n"
+"POT-Creation-Date: 2015-02-26 14:23+0545\n"
+"PO-Revision-Date: 2015-02-26 14:24+0545\n"
+"Last-Translator: WEN Themes <info@wenthemes.com>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ../../wen-responsive-columns\n"
+
+#: ../../wen-responsive-columns/admin/class-wen-responsive-columns-admin.php:131
+msgid "Grid:"
+msgstr ""
+
+#: ../../wen-responsive-columns/admin/class-wen-responsive-columns-admin.php:133
+#: ../../wen-responsive-columns/admin/class-wen-responsive-columns-admin.php:146
+#: ../../wen-responsive-columns/admin/class-wen-responsive-columns-admin.php:194
+msgid "Select"
+msgstr ""
+
+#: ../../wen-responsive-columns/admin/class-wen-responsive-columns-admin.php:134
+msgid "2"
+msgstr ""
+
+#: ../../wen-responsive-columns/admin/class-wen-responsive-columns-admin.php:135
+msgid "3"
+msgstr ""
+
+#: ../../wen-responsive-columns/admin/class-wen-responsive-columns-admin.php:136
+msgid "4"
+msgstr ""
+
+#: ../../wen-responsive-columns/admin/class-wen-responsive-columns-admin.php:137
+msgid "5"
+msgstr ""
+
+#: ../../wen-responsive-columns/admin/class-wen-responsive-columns-admin.php:138
+msgid "12"
+msgstr ""
+
+#: ../../wen-responsive-columns/admin/class-wen-responsive-columns-admin.php:140
+msgid "Please select grid. Grid represents maximum number of columns allowed."
+msgstr ""
+
+#: ../../wen-responsive-columns/admin/class-wen-responsive-columns-admin.php:144
+msgid "Number of Columns:"
+msgstr ""
+
+#: ../../wen-responsive-columns/admin/class-wen-responsive-columns-admin.php:148
+msgid "Please select number of columns."
+msgstr ""
+
+#: ../../wen-responsive-columns/admin/class-wen-responsive-columns-admin.php:153
+msgid "Column Mix:"
+msgstr ""
+
+#: ../../wen-responsive-columns/admin/class-wen-responsive-columns-admin.php:155
+msgid ""
+"Please enter column mix. Eg, for grid 3 and columns 2, mix could be 1-2 or "
+"2-1"
+msgstr ""
+
+#: ../../wen-responsive-columns/admin/class-wen-responsive-columns-admin.php:159
+msgid "Insert"
+msgstr ""
+
+#: ../../wen-responsive-columns/admin/class-wen-responsive-columns-admin.php:195
+msgid "Your content"
+msgstr ""
+
+#: ../../wen-responsive-columns/admin/class-wen-responsive-columns-admin.php:196
+msgid "Please select grid"
+msgstr ""
+
+#: ../../wen-responsive-columns/admin/class-wen-responsive-columns-admin.php:197
+msgid "Please select column"
+msgstr ""
+
+#: ../../wen-responsive-columns/admin/class-wen-responsive-columns-admin.php:198
+msgid "Invalid column mix"
+msgstr ""
+
+#: ../../wen-responsive-columns/admin/partials/wen-responsive-columns-tinymce-plugin-langs.php:12
+msgid "WEN Responsive Columns"
+msgstr ""
+
+#: ../../wen-responsive-columns/admin/partials/wen-responsive-columns-tinymce-plugin-langs.php:13
+msgid "WEN Responsive Columns Shortcode Generator"
+msgstr ""

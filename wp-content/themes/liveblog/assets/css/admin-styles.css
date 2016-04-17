@@ -1,0 +1,44 @@
+.customize-divide {
+	background:#f2f2f2;
+	padding:10px 8px;
+	text-align:center;
+}
+.customizer-control-row {
+	float:left;
+    height:75px;
+	margin:0 10px 10px 0;
+    overflow:hidden;
+    position:relative;
+    vertical-align:top;
+    width:90px;
+}
+.customizer-control-row input,
+.customizer-control-row label { width:100% }
+.customizer-control-row input {
+	height:100%;
+	opacity:0;
+	position:absolute
+}
+.customizer-control-row label {
+	display:block;
+	height:75px
+}
+
+/* Main Layout */
+#customize-control-main_layout .customizer-control-row:nth-child(1) input[type="radio"] + label,
+#customize-control-single_layout .customizer-control-row:nth-child(1) input[type="radio"] + label,
+#customize-control-archive_layout .customizer-control-row:nth-child(1) input[type="radio"] + label { background:url('../images/layout/cb.png') no-repeat }
+#customize-control-main_layout .customizer-control-row:nth-child(2) input[type="radio"] + label,
+#customize-control-single_layout .customizer-control-row:nth-child(2) input[type="radio"] + label,
+#customize-control-archive_layout .customizer-control-row:nth-child(2) input[type="radio"] + label { background:url('../images/layout/bc.png') no-repeat }
+
+/* Footer Layout */
+#customize-control-footer_layout .customizer-control-row:nth-child(1) input[type="radio"] + label { background:url('../images/layout/f1c.png') no-repeat }
+#customize-control-footer_layout .customizer-control-row:nth-child(2) input[type="radio"] + label { background:url('../images/layout/f2c.png') no-repeat }
+#customize-control-footer_layout .customizer-control-row:nth-child(3) input[type="radio"] + label { background:url('../images/layout/f3c.png') no-repeat }
+#customize-control-footer_layout .customizer-control-row:nth-child(4) input[type="radio"]+ label { background:url('../images/layout/f4c.png') no-repeat }
+.customizer-control-row input[type="radio"]:checked + label {
+	-moz-box-shadow:0 0 0 4px #0074a2 inset;
+	-webkit-box-shadow:0 0 0 4px #0074a2 inset;
+	box-shadow:0 0 0 4px #0074a2 inset
+}
